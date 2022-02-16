@@ -1,0 +1,13 @@
+public class algoritmo{
+	public static void main(String args[]) {
+		String str = "Ya3";
+		long caracteres = str.chars().filter(ch-> ch != ' ').count();
+		long caracm = (caracteres - 6)*-1;
+		
+		if (caracteres < 6)
+			System.out.println("Foram inseridos " + caracteres + " caracteres no campo, por favor insira mais "+
+		caracm +" caracteres para o limite minimo ser atingido.");
+		else
+			System.out.println("Senha forte.");
+	}
+}
